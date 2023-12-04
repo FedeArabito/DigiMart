@@ -137,6 +137,11 @@ nav ul  li .home{
 
 
 /*! HERO (SECCION 1)*/
+.grid-galeria{
+  display: none;
+}
+
+
 #carouselExampleCaptions{
   margin: 20px 20px;
   display: block;
@@ -181,6 +186,7 @@ nav ul  li .home{
   display: block;
   border: solid 3px white;
   text-align: center;
+  
   
 }
 
@@ -382,22 +388,6 @@ form .caja1 .item input:focus, form .caja2 textarea:focus, form .form-btn input[
   background: rgba(255,255,255,0.075);
 }
 
-@media (max-width: 480px){
-  form .caja1{
-    flex-direction: column;
-  }
-  form .caja1 .item{
-    width: 100%;
-  }
-  form .form-btn{
-    display: flex;
-    flex-direction: column;
-  }
-  form .form-btn input{
-    margin-bottom: 10px;
-    width: 100%;
-  }
-}
 
 
 
@@ -485,6 +475,8 @@ footer .redes a:hover{
 
 /*! MEDIA QUERY */
 
+/*!NAVBAR */
+
 @media(max-width:768px){
   .hamburger{
     display:block;
@@ -527,4 +519,99 @@ footer .redes a:hover{
   header nav .navi__menu.activo{
     left: 0;
   }
+}
+
+/*! FORM*/
+@media (max-width: 768px){
+  form .caja1{
+    flex-direction: column;
+  }
+  form .caja1 .item{
+    width: 100%;
+  }
+  form .form-btn{
+    display: flex;
+    flex-direction: column;
+  }
+  form .form-btn input{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+/*! INTRO*/
+@media  screen and (max-width: 768px ) {
+  .intro{
+    height: 380px;
+    text-align: center;
+    
+  }
+
+  .intro p{
+    
+    font-size: 15px ;
+    padding: 40px;
+  }
+  
+}
+
+/*! SLIDER */
+
+@media  screen and (max-width: 768px ){
+  .marcas img{
+    height: 50px;
+  }
+}
+
+/*! CARDS*/
+
+@media screen and (max-width: 768px) {
+  .cards{
+    width: 25%;
+    height: 300px;
+  }
+  .card-img img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*!HERO*/
+
+@media screen and (max-width: 768px) {
+  #carouselExampleCaptions{
+    display: none;
+  }
+  .grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin: 20px 20px;
+    grid-template-areas: 
+    "img-1 img-4 img-2"
+    "img-3 img-3 img-3";
+  }
+  .grid-galeria img{
+    display: grid;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-1{
+    grid-area: img-1;
+    
+  }
+
+  .img-2{
+    grid-area: img-2;
+  }
+  .img-3{
+    grid-area: img-3;
+  }
+  .img-4{
+    grid-area: img-4;
+  }
+  
 }
