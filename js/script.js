@@ -12,3 +12,5 @@ document.querySelectorAll(".navi-item", ".home").forEach(n => n.addEventListener
     navMenu.classList.remove("activo");
 
   }))
+
+

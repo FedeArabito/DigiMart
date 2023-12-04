@@ -193,6 +193,27 @@ nav ul  li .home{
 }
 
 
+/*!SECCION SCROLLER*/
+.scroller{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.marcas{
+  display: flex;
+  margin: 25px;
+}
+.marcas img{
+  height: 70px;
+  margin: 0 8px;
+  background-color: rgba(128, 128, 128, 0.616);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
 
 /*!SECCION 3, SECCION 4 Y CARDS*/
 
