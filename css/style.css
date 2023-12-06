@@ -46,12 +46,12 @@ header{
   font-family: 'Open Sans', sans-serif;
 }
 
-.logo__contenedor{
+header .logo__contenedor{
   
   background-color: black;
 }
 
-.logo{
+header div .logo{
   color: #00c3ff;
   font-weight: bold;
   background-color: black;
@@ -59,36 +59,47 @@ header{
   
 }
 
-.logo h1{
+header div a h1{
   background-color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   font-weight: bold;
 }
 
-.logo h1 a{
+header div a h1{
   cursor: pointer;
 }
 
-.logo h1 a:hover{
+header div a h1:hover{
   color: #00c3ff;
   text-decoration: none;
 }
 
-nav{
+header nav{
   background-color: black;
 }
 
-nav .navi__menu{
+header nav ul{
   display: flex;
   background-color: black;
 }
 
-nav .navi__menu li{
+header nav ul li{
   background-color: black;
 }
 
-nav .navi__menu li .navi__item{
+header nav ul  li .home{
+  display: block;
+  color: white;
+  border-radius: 50px;
+  margin: 5px;
+  font-size: 15px;
+  padding: 5px;
+  background-color: #00c3ff;
+  text-decoration: none;
+}
+
+header nav ul li .navi__item{
   font-size: 15px;
   color: #ffff;
   font-weight: 500;
@@ -107,16 +118,6 @@ nav ul li .navi__item:hover{
   border-radius: 50px;
 }
 
-nav ul  li .home{
-  display: block;
-  color: white;
-  border-radius: 50px;
-  margin: 5px;
-  font-size: 15px;
-  padding: 5px;
-  background-color: #00c3ff;
-  text-decoration: none;
-}
 
 .hamburger{
   display: none;
@@ -181,7 +182,7 @@ nav ul  li .home{
 
 /*!SECCION 2 */
 
-.intro{
+section .intro{
   margin: 20px 20px;
   display: block;
   border: solid 3px white;
@@ -190,7 +191,7 @@ nav ul  li .home{
   
 }
 
-.intro p{
+section .intro p{
   color: white;
   padding: 40px;
   font-size: 25px;
@@ -200,7 +201,7 @@ nav ul  li .home{
 
 
 /*!SECCION SCROLLER*/
-.scroller{
+section .scroller{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,11 +209,11 @@ nav ul  li .home{
   
 }
 
-.marcas{
+section div .marcas{
   display: flex;
   margin: 25px;
 }
-.marcas img{
+section div .marcas img{
   height: 70px;
   margin: 0 8px;
   background-color: rgba(128, 128, 128, 0.616);
@@ -224,7 +225,7 @@ nav ul  li .home{
 
 /*!SECCION 3, SECCION 4 Y CARDS*/
 
-.card-ofertas {
+section .card-ofertas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +233,7 @@ nav ul  li .home{
   
 }
 
-.cards{
+section div .cards{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,10 +247,11 @@ nav ul  li .home{
   
 }
 
-.card-img{
+section div div .card-img{
   margin-top: 15px;
   max-width: 240px;
   height: 240px;
+  background-color: rgb(19, 17, 17);
 }
 .producto-img{
   max-width: 200px;
@@ -257,6 +259,11 @@ nav ul  li .home{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.cards:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .card-contenido, .card-img, .card-precio, .card-link{
@@ -267,7 +274,11 @@ nav ul  li .home{
 }
 
 .card-contenido h4{
+  margin: 10px 0;
   color: white;
+  font-size: 12px;
+  line-break: normal;
+  max-width: 180px;
   
 }
 
