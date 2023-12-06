@@ -180,47 +180,21 @@ nav ul li .navi__item:hover{
   background-color: transparent;
 }
 
-/*!SECCION 2 */
-
-section .intro{
-  margin: 20px 20px;
-  display: block;
-  border: solid 3px white;
-  text-align: center;
-  
-  
-}
-
-section .intro p{
-  color: white;
-  padding: 40px;
-  font-size: 25px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-}
-
-
 /*!SECCION SCROLLER*/
-section .scroller{
+.scroller{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  
+  margin: 20px 20px;
 }
 
-section div .marcas{
-  display: flex;
-  margin: 25px;
-}
-section div .marcas img{
-  height: 70px;
-  margin: 0 8px;
-  background-color: rgba(128, 128, 128, 0.616);
-  border-radius: 5px;
-  padding: 5px;
-}
 
+.marcas img{
+  height: 60px;
+  margin: 5px;
+  background-color: #bbbbbba9;
+  border-radius: 4px;
+}
 
 
 /*!SECCION 3, SECCION 4 Y CARDS*/
@@ -255,7 +229,7 @@ section div div .card-img{
 }
 .producto-img{
   max-width: 200px;
-  max-height: 150px;
+  max-height: 120px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -575,57 +549,25 @@ footer .redes a:hover{
   }
 }
 
-
-
-/*! INTRO*/
-@media  screen and (max-width: 768px ) {
-  .intro{
-    height: 380px;
-    text-align: center;
-    
-  }
-
-  .intro p{
-    
-    font-size: 15px ;
-    padding: 40px;
-  }
-  
-}
-@media screen and (max-width: 421px) {
-  .intro{
-    margin: 20px 20px;
-    text-align: center;
-    height: 200px;
-    padding: 0;
-    border: solid 2px white;
-  }
-
-  .intro p{
-    font-size: 12px;
-    height: 45px;
-    margin: 20px 0;
-    padding: 0;
-  }
-}
-
 /*! SLIDER */
-@media  screen and (max-width: 768px ){
+@media  screen and (max-width: 550px ){
   .marcas img{
-    height: 50px;
+    height: 45px;
   }
 }
 
-  @media screen and (max-width: 421px){
-    .marcas {
-      width: 80%;
-      margin: 20px;
-    }
-  
-    .marcas img{
-      height: 30px;
-    }
+@media screen and (max-width: 440px) {
+  .marcas img{
+    height: 35px;
   }
+  
+}
+
+@media screen and (max-width: 369px) {
+  .marcas img{
+    height: 25px;
+  }
+}
   
 
 /*! CARDS*/
