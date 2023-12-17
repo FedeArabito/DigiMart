@@ -1,0 +1,16 @@
+/*SLIDER*/
+
+.scroller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    .marcas{
+        img{
+            height: 60px;
+            margin: 5px;
+            background-color: #bbbbbba9;
+            border-radius: 4px;
+        }
+    }
+}

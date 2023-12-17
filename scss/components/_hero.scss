@@ -1,0 +1,47 @@
+/*HERO*/
+
+.hero{
+    #carouselExampleCaptions{
+        margin: 20px 20px;
+        display: block;
+        text-align: center;
+        .carousel-indicators{
+            background-color: transparent;
+        }
+        .carousel-inner{
+            .c-item{
+                height: 480px;
+                .c-img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .c-bg{
+                    background-color: transparent;
+                    p{
+                        background-color: transparent;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: bold;
+                    }
+                    h5{
+                        background-color: transparent;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .carousel-control-prev{
+            .carousel-control-prev-icon{
+                background-color: transparent;
+            }
+        }
+        .carousel-control-next{
+            .carousel-control-next-icon{
+                background-color: transparent;
+            }
+        }
+    }
+    .grid-galeria{
+        display: none;
+    }
+}
