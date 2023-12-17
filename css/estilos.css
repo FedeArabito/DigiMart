@@ -281,3 +281,49 @@ section .card-ofertas {
       color: black; }
     .form form .form-btn input [type="reset"]:hover {
       background: rgba(255, 255, 255, 0.075); }
+
+/*FOOTER*/
+.pie .container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  height: 250px;
+  margin: 0 auto; }
+  .pie .container .pie__rows {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid white; }
+    .pie .container .pie__rows .pie__links {
+      padding: 15px;
+      height: 50%; }
+      .pie .container .pie__rows .pie__links h4 {
+        font-size: 20px;
+        color: #ffff;
+        margin-bottom: 15px;
+        font-weight: 500;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #00c3ff;
+        display: inline-block; }
+      .pie .container .pie__rows .pie__links ul {
+        padding: 0; }
+        .pie .container .pie__rows .pie__links ul li a {
+          text-decoration: none;
+          margin-bottom: 5px;
+          color: #bbbbbb;
+          transition: all .3s ease; }
+          .pie .container .pie__rows .pie__links ul li a:hover {
+            color: white;
+            padding-left: 6px; }
+      .pie .container .pie__rows .pie__links .redes a {
+        display: inline-block;
+        min-height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 10px 10px 0;
+        color: white;
+        line-height: 40px;
+        transition: all .5s ease; }
+        .pie .container .pie__rows .pie__links .redes a:hover {
+          background-color: #00c3ff; }
