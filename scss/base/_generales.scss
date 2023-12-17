@@ -1,0 +1,35 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*ROOT*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(19, 17, 17);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    margin-left: 20px;
+    color: white;
+    border-bottom: 2px solid #00c3ff ;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
