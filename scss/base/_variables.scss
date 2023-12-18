@@ -1,0 +1,26 @@
+@mixin flex($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@mixin flex-text($display, $justify, $align,$text){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}
+
+
+
+$celeste : #00c3ff;
+
+
+%hero{
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+$bg-carousel: transparent;

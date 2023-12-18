@@ -28,6 +28,11 @@ h2 {
   font-weight: bold; }
 
 /*! HEADER */
+.hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
 header {
   width: 100%;
   height: 80px;
@@ -95,6 +100,11 @@ header {
       transition: all 0.3s ease-in-out; }
 
 /*HERO*/
+.hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
 .hero #carouselExampleCaptions {
   margin: 20px 20px;
   display: block;
@@ -108,14 +118,6 @@ header {
       object-fit: cover; }
     .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg {
       background-color: transparent; }
-      .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p {
-        background-color: transparent;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold; }
-      .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
-        background-color: transparent;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold; }
   .hero #carouselExampleCaptions .carousel-control-prev .carousel-control-prev-icon {
     background-color: transparent; }
   .hero #carouselExampleCaptions .carousel-control-next .carousel-control-next-icon {
@@ -137,10 +139,16 @@ header {
     border-radius: 4px; }
 
 /*CARDS*/
+.hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
 section .card-ofertas {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap; }
   section .card-ofertas .cards {
     display: flex;
@@ -151,8 +159,7 @@ section .card-ofertas {
     height: 340px;
     border: white solid 2px;
     border-radius: 10px;
-    margin: 50px 60px;
-    text-align: center; }
+    margin: 50px 60px; }
     section .card-ofertas .cards:hover {
       cursor: pointer;
       transform: scale(1.1); }
@@ -204,6 +211,11 @@ section .card-ofertas {
         padding: 5px; }
 
 /*FORM*/
+.hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
 .form form {
   width: 640px;
   margin: 50px auto;
@@ -327,3 +339,101 @@ section .card-ofertas {
         transition: all .5s ease; }
         .pie .container .pie__rows .pie__links .redes a:hover {
           background-color: #00c3ff; }
+
+@media (max-width: 768px) {
+  /*NAV BAR */
+  header .logo__contenedor .logo {
+    display: block;
+    text-align: center; }
+  header nav .hamburger {
+    display: block; }
+  header nav .hamburger.activo:nth-child(2) {
+    opacity: 0; }
+  header nav .hamburger.activo:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); }
+  header nav .hamburger.activo:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); }
+  header nav .navi__menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #19191a44;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s; }
+    header nav .navi__menu li {
+      margin: 0;
+      padding: 5px 0; }
+  header nav .navi__menu.activo {
+    left: 0; }
+  /*HERO GRID*/
+  .hero #carouselExampleCaptions {
+    display: none; }
+  .hero .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 20px 20px;
+    grid-template-areas: "img-1 img-4 img-2" "img-3 img-3 img-3"; }
+    .hero .grid-galeria img {
+      display: grid;
+      width: 100%;
+      object-fit: cover;
+      justify-content: center;
+      align-items: center; }
+    .hero .grid-galeria .img-1 {
+      grid-area: img-1;
+      height: 15vh; }
+    .hero .grid-galeria .img-2 {
+      grid-area: img-2;
+      height: 15vh; }
+    .hero .grid-galeria .img-3 {
+      grid-area: img-3; }
+    .hero .grid-galeria .img-4 {
+      grid-area: img-4;
+      height: 15vh; }
+  /*CARDS 768PX*/
+  .ofertas .cards {
+    width: 25%;
+    height: 300px; }
+    .ofertas .cards .card-img img {
+      width: 100px;
+      height: 100px; }
+  /*FORM*/
+  .form form .caja1 {
+    flex-direction: column; }
+    .form form .caja1 .item {
+      width: 100%; }
+  .form form .form-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .form form .form-btn input {
+      margin-bottom: 10px;
+      width: 100%; } }
+
+@media screen and (max-width: 646px) {
+  .pie .container .pie__rows .pie__links {
+    width: 25%; }
+    .pie .container .pie__rows .pie__links ul li a {
+      font-size: 12px; }
+    .pie .container .pie__rows .pie__links .redes a i {
+      height: 20px;
+      width: auto; } }
+
+@media screen and (max-width: 590px) {
+  .ofertas .card-ofertas .cards {
+    width: 38%; } }
+
+@media screen and (max-width: 550px) {
+  section .scroller .marcas img {
+    height: 45px; } }
+
+@media screen and (max-width: 440px) {
+  section .scroller .marcas img {
+    height: 35px; } }
+
+@media screen and (max-width: 369px) {
+  section .scroller .marcas img {
+    height: 25px; } }

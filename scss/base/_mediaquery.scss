@@ -1,0 +1,194 @@
+
+
+@media(max-width:768px){
+    /*NAV BAR */
+    header{
+        .logo__contenedor{
+            .logo{
+                display: block;
+                text-align: center;
+            }
+        }
+        nav{
+            .hamburger{
+                display:block;
+            }
+            .hamburger.activo{
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:nth-child(1){
+                    transform: translateY(8px) rotate(45deg);
+                }
+                &:nth-child(3){
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+            .navi__menu{
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: #19191a44;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                li{
+                    margin: 0;
+                    padding: 5px 0;
+                }
+            }
+            .navi__menu.activo{
+                left: 0;
+            }
+        }
+    }
+
+    /*HERO GRID*/
+    .hero{
+        #carouselExampleCaptions{
+            display: none;
+        }
+        .grid-galeria{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            margin: 20px 20px;
+            grid-template-areas: 
+            "img-1 img-4 img-2"
+            "img-3 img-3 img-3";
+            img{
+                display: grid;
+                width: 100%;
+                object-fit: cover;
+                justify-content: center;
+                align-items: center;
+            }
+            .img-1{
+                grid-area: img-1;
+                height: 15vh;
+            }
+            .img-2{
+                grid-area: img-2;
+                height: 15vh;
+            }
+            .img-3{
+                grid-area: img-3;
+            }
+            .img-4{
+                grid-area: img-4;
+                height: 15vh;
+            }
+        }
+    }
+
+    /*CARDS 768PX*/
+    .ofertas{
+        .cards{
+            width: 25%;
+            height: 300px;
+            .card-img{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    /*FORM*/
+    .form{
+        form{
+            .caja1{
+                flex-direction: column;
+                .item{
+                    width: 100%;
+                }
+            }
+            .form-btn{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                input{
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 646px){
+    .pie{
+        .container{
+            .pie__rows{
+                .pie__links{
+                    width: 25%;
+                    ul{
+                        li{
+                            a{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .redes{
+                        a{
+                            i{
+                                height: 20px;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .ofertas{
+        .card-ofertas{
+            .cards{
+                width: 38%;
+            }
+        }
+    }
+
+}
+
+@media  screen and (max-width: 550px ){
+    section{
+        .scroller{
+            .marcas{
+                img{
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 440px ){
+    section{
+        .scroller{
+            .marcas{
+                img{
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media  screen and (max-width: 369px ){
+    section{
+        .scroller{
+            .marcas{
+                img{
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

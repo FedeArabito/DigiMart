@@ -1,4 +1,5 @@
 /*HERO*/
+@import "../base/variables";
 
 .hero{
     #carouselExampleCaptions{
@@ -6,7 +7,7 @@
         display: block;
         text-align: center;
         .carousel-indicators{
-            background-color: transparent;
+            background-color: $bg-carousel;
         }
         .carousel-inner{
             .c-item{
@@ -16,28 +17,24 @@
                     object-fit: cover;
                 }
                 .c-bg{
-                    background-color: transparent;
+                    background-color: $bg-carousel;
                     p{
-                        background-color: transparent;
-                        font-family: 'Open Sans', sans-serif;
-                        font-weight: bold;
+                    @extend %hero;
                     }
                     h5{
-                        background-color: transparent;
-                        font-family: 'Open Sans', sans-serif;
-                        font-weight: bold;
+                    @extend %hero;
                     }
                 }
             }
         }
         .carousel-control-prev{
             .carousel-control-prev-icon{
-                background-color: transparent;
+                background-color: $bg-carousel;
             }
         }
         .carousel-control-next{
             .carousel-control-next-icon{
-                background-color: transparent;
+                background-color: $bg-carousel;
             }
         }
     }
