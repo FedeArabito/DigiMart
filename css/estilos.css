@@ -56,6 +56,13 @@ header {
         header .logo__contenedor .logo h1:hover {
           color: #00c3ff;
           text-decoration: none; }
+        header .logo__contenedor .logo h1 span {
+          background-color: black; }
+          header .logo__contenedor .logo h1 span img {
+            height: 55px;
+            width: 55px;
+            margin: 5px 5px;
+            background-color: black; }
   header nav {
     background-color: black; }
     header nav ul {
