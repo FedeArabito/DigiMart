@@ -56,13 +56,6 @@ header {
         header .logo__contenedor .logo h1:hover {
           color: #00c3ff;
           text-decoration: none; }
-        header .logo__contenedor .logo h1 span {
-          background-color: black; }
-          header .logo__contenedor .logo h1 span img {
-            height: 55px;
-            width: 55px;
-            margin: 5px 5px;
-            background-color: black; }
   header nav {
     background-color: black; }
     header nav ul {
@@ -347,6 +340,7 @@ section .card-ofertas {
         .pie .container .pie__rows .pie__links .redes a:hover {
           background-color: #00c3ff; }
 
+/*MEDIA QUERYS*/
 @media (max-width: 768px) {
   /*NAV BAR */
   header .logo__contenedor .logo {
@@ -420,6 +414,7 @@ section .card-ofertas {
       margin-bottom: 10px;
       width: 100%; } }
 
+/*FOOTER*/
 @media screen and (max-width: 646px) {
   .pie .container .pie__rows .pie__links {
     width: 25%; }
@@ -429,10 +424,12 @@ section .card-ofertas {
       height: 20px;
       width: auto; } }
 
+/*CARDS*/
 @media screen and (max-width: 590px) {
   .ofertas .card-ofertas .cards {
     width: 38%; } }
 
+/*SCROLLER*/
 @media screen and (max-width: 550px) {
   section .scroller .marcas img {
     height: 45px; } }

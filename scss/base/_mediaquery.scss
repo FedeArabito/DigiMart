@@ -1,4 +1,6 @@
 
+/*MEDIA QUERYS*/
+
 
 @media(max-width:768px){
     /*NAV BAR */
@@ -118,6 +120,7 @@
     }
 }
 
+/*FOOTER*/
 @media screen and (max-width: 646px){
     .pie{
         .container{
@@ -146,6 +149,7 @@
     }
 }
 
+/*CARDS*/
 @media screen and (max-width: 590px) {
     .ofertas{
         .card-ofertas{
@@ -157,6 +161,7 @@
 
 }
 
+/*SCROLLER*/
 @media  screen and (max-width: 550px ){
     section{
         .scroller{
