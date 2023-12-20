@@ -7,12 +7,12 @@ header{
     height: 80px;
     @include flex(flex, space-between, center);
     padding: 0 40px;
-    background-color: black;
+    background-color: nth($colores,3);
     font-family: 'Open Sans', sans-serif;
     .logo__contenedor{
         background-color: black;
         .logo{
-            color: $celeste;
+            color: nth($colores,1);
             font-weight: bold;
             background-color: black;
             text-decoration: none;
@@ -21,7 +21,7 @@ header{
                     font-size: 32px;
                     font-weight: bold;
                     &:hover{
-                        color: $celeste;
+                        color: nth($colores, 1);
                         text-decoration: none;
                     }
                 

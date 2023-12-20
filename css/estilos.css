@@ -377,7 +377,8 @@ section .card-ofertas {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 20px 20px;
-    grid-template-areas: "img-1 img-4 img-2" "img-3 img-3 img-3"; }
+    grid-template-areas: "img-1 img-4 img-2"
+ "img-3 img-3 img-3"; }
     .hero .grid-galeria img {
       display: grid;
       width: 100%;
