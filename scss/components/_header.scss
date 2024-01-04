@@ -1,6 +1,6 @@
 /*! HEADER */
 @import "../base/variables";
-
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 header{
     width: 100%;
@@ -20,15 +20,23 @@ header{
             background-color: black;
             text-decoration: none;
                 img{
-                    margin-right: 3px;
-                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
+                    height: auto;
                     width: 80px;
                     background-color: transparent;
                 }
+
                 h1{
+
                     background-color: black;
                     font-size: 25px;
                     font-weight: bold;
+                    
+                    line-height: .3em;
+                    font-palette: --titulo;
                     &:hover{
                         color: nth($colores, 1);
                         text-decoration: none;

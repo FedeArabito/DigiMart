@@ -1,6 +1,7 @@
 /*FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*ROOT*/
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -54,14 +55,19 @@ header {
       background-color: black;
       text-decoration: none; }
       header .logo__contenedor .logo img {
-        margin-right: 3px;
-        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        height: auto;
         width: 80px;
         background-color: transparent; }
       header .logo__contenedor .logo h1 {
         background-color: black;
         font-size: 25px;
-        font-weight: bold; }
+        font-weight: bold;
+        line-height: .3em;
+        font-palette: --titulo; }
         header .logo__contenedor .logo h1:hover {
           color: #00c3ff;
           text-decoration: none; }
@@ -124,6 +130,7 @@ header {
     height: 480px; }
     .hero #carouselExampleCaptions .carousel-inner .c-item .c-img {
       height: 100%;
+      width: 100%;
       object-fit: cover;
       border-radius: 10px; }
     .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg {
