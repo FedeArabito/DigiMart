@@ -12,13 +12,22 @@ header{
     .logo__contenedor{
         background-color: black;
         .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: nth($colores,1);
             font-weight: bold;
             background-color: black;
             text-decoration: none;
+                img{
+                    margin-right: 3px;
+                    height: 50px;
+                    width: 80px;
+                    background-color: transparent;
+                }
                 h1{
                     background-color: black;
-                    font-size: 32px;
+                    font-size: 25px;
                     font-weight: bold;
                     &:hover{
                         color: nth($colores, 1);
@@ -27,7 +36,9 @@ header{
                 
                 }
         }
+
     }
+
     nav{
         background-color: black; 
         ul{
@@ -51,7 +62,7 @@ header{
                     font-weight: 500;
                     display: block;
                     transition: all .3s ease;
-                    margin: 5px;
+                    margin: 3px;
                     padding: 5px;
                     border-radius: 50px;
                     text-decoration: none;

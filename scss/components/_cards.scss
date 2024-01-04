@@ -10,6 +10,7 @@ section .card-ofertas{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
         width: 240px;
         height: 340px;
         border: white solid 2px;
@@ -35,6 +36,7 @@ section .card-ofertas{
         }
         .card-contenido{
             @include flex-text(flex, center, center,center);
+            flex-wrap: wrap;
             h4{
                 margin: 10px 0;
                 color: white;
@@ -45,7 +47,7 @@ section .card-ofertas{
         }
         .card-precio{
             @include flex-text(flex, center, center,center);
-            
+            flex-wrap: wrap;
             color: white;
             margin-bottom: 10px;
             margin-top: 10px;
@@ -53,6 +55,7 @@ section .card-ofertas{
         .card-link{
             @include flex-text(flex, center, center,center);
             margin-bottom: 30px;
+            flex-wrap: wrap;
             a{
                 background-color: #00c3ff;
                 border-radius: 10px;

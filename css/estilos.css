@@ -46,13 +46,21 @@ header {
   header .logo__contenedor {
     background-color: black; }
     header .logo__contenedor .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #00c3ff;
       font-weight: bold;
       background-color: black;
       text-decoration: none; }
+      header .logo__contenedor .logo img {
+        margin-right: 3px;
+        height: 50px;
+        width: 80px;
+        background-color: transparent; }
       header .logo__contenedor .logo h1 {
         background-color: black;
-        font-size: 32px;
+        font-size: 25px;
         font-weight: bold; }
         header .logo__contenedor .logo h1:hover {
           color: #00c3ff;
@@ -79,7 +87,7 @@ header {
           font-weight: 500;
           display: block;
           transition: all .3s ease;
-          margin: 5px;
+          margin: 3px;
           padding: 5px;
           border-radius: 50px;
           text-decoration: none;
@@ -116,7 +124,8 @@ header {
     height: 480px; }
     .hero #carouselExampleCaptions .carousel-inner .c-item .c-img {
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      border-radius: 10px; }
     .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg {
       background-color: transparent; }
   .hero #carouselExampleCaptions .carousel-control-prev .carousel-control-prev-icon {
@@ -137,7 +146,8 @@ header {
     height: 60px;
     margin: 5px;
     background-color: #bbbbbba9;
-    border-radius: 4px; }
+    border-radius: 4px;
+    padding: 5px; }
 
 /*CARDS*/
 .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
@@ -183,7 +193,8 @@ section .card-ofertas {
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      flex-wrap: wrap; }
       section .card-ofertas .cards .card-contenido h4 {
         margin: 10px 0;
         color: white;
@@ -195,6 +206,7 @@ section .card-ofertas {
       justify-content: center;
       align-items: center;
       text-align: center;
+      flex-wrap: wrap;
       color: white;
       margin-bottom: 10px;
       margin-top: 10px; }
@@ -203,7 +215,8 @@ section .card-ofertas {
       justify-content: center;
       align-items: center;
       text-align: center;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      flex-wrap: wrap; }
       section .card-ofertas .cards .card-link a {
         background-color: #00c3ff;
         border-radius: 10px;
@@ -342,11 +355,18 @@ section .card-ofertas {
           background-color: #00c3ff; }
 
 /*MEDIA QUERYS*/
+/*buscador*/
+@media (max-width: 1075px) {
+  header .buscador input {
+    width: 200px; } }
+
 @media (max-width: 768px) {
   /*NAV BAR */
   header .logo__contenedor .logo {
-    display: block;
+    display: flex;
     text-align: center; }
+  header .buscador {
+    display: none; }
   header nav .hamburger {
     display: block; }
   header nav .hamburger.activo:nth-child(2) {
@@ -377,8 +397,7 @@ section .card-ofertas {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin: 20px 20px;
-    grid-template-areas: "img-1 img-4 img-2"
- "img-3 img-3 img-3"; }
+    grid-template-areas: "img-1 img-4 img-2" "img-3 img-3 img-3"; }
     .hero .grid-galeria img {
       display: grid;
       width: 100%;
@@ -387,15 +406,19 @@ section .card-ofertas {
       align-items: center; }
     .hero .grid-galeria .img-1 {
       grid-area: img-1;
-      height: 15vh; }
+      height: 15vh;
+      border-radius: 10px; }
     .hero .grid-galeria .img-2 {
       grid-area: img-2;
-      height: 15vh; }
+      height: 15vh;
+      border-radius: 10px; }
     .hero .grid-galeria .img-3 {
-      grid-area: img-3; }
+      grid-area: img-3;
+      border-radius: 10px; }
     .hero .grid-galeria .img-4 {
       grid-area: img-4;
-      height: 15vh; }
+      height: 15vh;
+      border-radius: 10px; }
   /*CARDS 768PX*/
   .ofertas .cards {
     width: 25%;
@@ -425,11 +448,6 @@ section .card-ofertas {
     .pie .container .pie__rows .pie__links .redes a i {
       height: 20px;
       width: auto; } }
-
-/*CARDS*/
-@media screen and (max-width: 590px) {
-  .ofertas .card-ofertas .cards {
-    width: 38%; } }
 
 /*SCROLLER*/
 @media screen and (max-width: 550px) {

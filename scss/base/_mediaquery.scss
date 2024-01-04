@@ -1,15 +1,30 @@
 
 /*MEDIA QUERYS*/
 
+/*buscador*/
+@media (max-width:1075px) {
+    header{
+        .buscador{
+            input{
+                
+                width: 200px;
+            }
+        }
+    }
+    
+}
 
 @media(max-width:768px){
     /*NAV BAR */
     header{
         .logo__contenedor{
             .logo{
-                display: block;
+                display: flex;
                 text-align: center;
             }
+        }
+        .buscador{
+            display: none;
         }
         nav{
             .hamburger{
@@ -46,6 +61,7 @@
         }
     }
 
+    
     /*HERO GRID*/
     .hero{
         #carouselExampleCaptions{
@@ -65,21 +81,26 @@
                 object-fit: cover;
                 justify-content: center;
                 align-items: center;
+                
             }
             .img-1{
                 grid-area: img-1;
                 height: 15vh;
+                border-radius: 10px;
             }
             .img-2{
                 grid-area: img-2;
                 height: 15vh;
+                border-radius: 10px;
             }
             .img-3{
                 grid-area: img-3;
+                border-radius: 10px;
             }
             .img-4{
                 grid-area: img-4;
                 height: 15vh;
+                border-radius: 10px;
             }
         }
     }
@@ -149,17 +170,7 @@
     }
 }
 
-/*CARDS*/
-@media screen and (max-width: 590px) {
-    .ofertas{
-        .card-ofertas{
-            .cards{
-                width: 38%;
-            }
-        }
-    }
 
-}
 
 /*SCROLLER*/
 @media  screen and (max-width: 550px ){
