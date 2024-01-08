@@ -13,7 +13,7 @@ section .card-ofertas{
         box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
         width: 240px;
         height: 340px;
-        border: white solid 2px;
+        border: $celeste solid 2px;
         border-radius: 10px;
         margin: 50px 60px;
         &:hover{
@@ -61,7 +61,7 @@ section .card-ofertas{
             margin-bottom: 30px;
             flex-wrap: wrap;
             a{
-                background-color: #00c3ff;
+                background-color: rgb(255,0,103);
                 border-radius: 10px;
                 color: white;
                 font-size: 1em;

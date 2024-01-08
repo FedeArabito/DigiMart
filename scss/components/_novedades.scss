@@ -1,0 +1,11 @@
+@import "../base/variables";
+
+.novedades{
+    background-color: rgb(255,255,255);
+    border: 2px solid white;
+    .card-novedades{
+        background-color: rgb(255,255,255);
+        @include flex-text(flex, center, center,center);
+        flex-wrap: wrap;
+    }
+}
