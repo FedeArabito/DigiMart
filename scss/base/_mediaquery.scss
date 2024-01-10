@@ -1,18 +1,8 @@
 
 /*MEDIA QUERYS*/
 
-/*buscador*/
-@media (max-width:1075px) {
-    header{
-        .buscador{
-            input{
-                
-                width: 200px;
-            }
-        }
-    }
-    
-}
+
+
 
 @media (max-width: 970px){
     .of_seccion{
@@ -91,12 +81,9 @@
             "img-1 img-4 img-2"
             "img-3 img-3 img-3";
             img{
-                display: grid;
+                
                 width: 100%;
                 object-fit: cover;
-                justify-content: center;
-                align-items: center;
-                
             }
             .img-1{
                 grid-area: img-1;
@@ -161,9 +148,12 @@
         .of_container{
             .of_texto{
                 p{
-                    font-size: 12px;
+                    font-size: medium;
+                    strong{
+                        font-size: small;
+                    }
                     b{
-                        font-size: 15px;
+                        font-size: small;
                     }
                 }
             }
@@ -223,7 +213,7 @@
         .scroller{
             .marcas{
                 img{
-                    height: 45px;
+                    height: 55px;
                 }
             }
         }
@@ -234,6 +224,7 @@
     section{
         .scroller{
             .marcas{
+                flex-direction: row;
                 img{
                     height: 35px;
                 }
@@ -242,14 +233,3 @@
     }
 }
 
-@media  screen and (max-width: 369px ){
-    section{
-        .scroller{
-            .marcas{
-                img{
-                    height: 25px;
-                }
-            }
-        }
-    }
-}

@@ -12,6 +12,9 @@
   text-decoration: none;
   transition: all .3s; }
 
+section {
+  margin: 50px 0; }
+
 body {
   background: none; }
 
@@ -34,7 +37,7 @@ h2 {
   z-index: 9999;
   bottom: 12px;
   right: 12px;
-  width: 80px;
+  width: 70px;
   height: auto;
   background-color: transparent; }
 
@@ -153,29 +156,58 @@ header {
   display: none; }
 
 /*SLIDER*/
-.scroller {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.marcas {
+  text-align: center;
   margin: 20px 20px; }
-  .scroller .marcas img {
-    height: 60px;
-    margin: 5px;
-    background-color: #bbbbbba9;
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1); }
+  .marcas h2, .marcas span {
+    margin: 10px 0;
+    border-bottom: none; }
+  .marcas span {
+    font-size: medium;
+    color: #00c3ff; }
+  .marcas ul {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, calc(50% - 8px));
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .marcas ul li {
+      display: list-item; }
+    .marcas ul a {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #cfd4da;
+      border-radius: 16px;
+      flex-direction: column;
+      outline: none;
+      padding: 16px;
+      -webkit-transition: border .25s ease-out;
+      transition: border .25s ease-out; }
+      .marcas ul a img {
+        max-width: 100%;
+        height: 50px;
+        border-style: none;
+        vertical-align: middle;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+        background-color: transparent; }
+        .marcas ul a img:hover {
+          transform: scale(1.1); }
 
 .of_seccion {
-  margin: 20px 0;
+  background-color: rgba(90, 89, 89, 0.637);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: none;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  margin: 50px 0; }
   .of_seccion .of_container {
     padding: 20px;
     display: flex;
@@ -199,7 +231,10 @@ header {
         display: flex;
         background-color: black;
         color: white;
-        font-size: 20px; }
+        font-size: x-large; }
+        .of_seccion .of_container .of_texto p strong {
+          background-color: black;
+          font-size: 23px; }
         .of_seccion .of_container .of_texto p b {
           background-color: black;
           font-size: 23px; }
@@ -288,6 +323,10 @@ section .card-ofertas {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold; }
 
+.img-grid {
+  border-radius: 10px;
+  object-fit: cover; }
+
 .bento_grid_novedades {
   border-radius: 10px;
   display: flex;
@@ -297,27 +336,96 @@ section .card-ofertas {
   margin: 0 80px; }
   .bento_grid_novedades .wrapper {
     border-radius: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    color: white;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px; }
     .bento_grid_novedades .wrapper div {
-      border: 3px solid white;
-      border-radius: 10px; }
+      border-radius: 10px;
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.637); }
     .bento_grid_novedades .wrapper .grid1 {
       grid-column: 1/4;
-      grid-row: 1/3; }
+      grid-row: 1/3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      padding: 2em;
+      border-radius: .3em; }
+      .bento_grid_novedades .wrapper .grid1 h2 {
+        font-size: medium; }
+      .bento_grid_novedades .wrapper .grid1 p {
+        color: white;
+        font-size: small; }
+      .bento_grid_novedades .wrapper .grid1 img {
+        width: 80px;
+        height: auto;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background-color: transparent; }
     .bento_grid_novedades .wrapper .grid2 {
       grid-column: 4/4;
-      grid-row: 1/3; }
+      background-image: url("../img/interactive-keyboard-keycaps-customize-mobile-removebg-preview.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%; }
+      .bento_grid_novedades .wrapper .grid2 img {
+        width: 100%;
+        height: 15vh; }
     .bento_grid_novedades .wrapper .grid3 {
-      grid-column: 1/2; }
+      grid-column: 1/2;
+      background-image: url("../img/gaming_png.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%; }
+      .bento_grid_novedades .wrapper .grid3 img {
+        background-position: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%; }
     .bento_grid_novedades .wrapper .grid4 {
-      grid-column: 2/5; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: 2/5;
+      background-image: url("../img/gente-gaming1.jpeg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%; }
+      .bento_grid_novedades .wrapper .grid4 h2 {
+        text-align: center;
+        font-size: large;
+        border-bottom: none;
+        top: 20px;
+        left: 40%;
+        right: 50%;
+        background-color: transparent; }
+      .bento_grid_novedades .wrapper .grid4 img {
+        width: 100%;
+        height: 10vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; }
+    .bento_grid_novedades .wrapper .grid5 {
+      grid-column: 4/5;
+      grid-row: 2/3;
+      background-image: url("../img/mouse-grid.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%; }
+      .bento_grid_novedades .wrapper .grid5 img {
+        width: 100%;
+        height: auto; }
 
 /*FORM*/
 .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg p, .hero #carouselExampleCaptions .carousel-inner .c-item .c-bg h5 {
@@ -453,11 +561,6 @@ section .card-ofertas {
           background-color: inherit; }
 
 /*MEDIA QUERYS*/
-/*buscador*/
-@media (max-width: 1075px) {
-  header .buscador input {
-    width: 200px; } }
-
 @media (max-width: 970px) {
   .of_seccion .of_container .of_texto p {
     font-size: 15px; }
@@ -503,11 +606,8 @@ section .card-ofertas {
     margin: 20px 20px;
     grid-template-areas: "img-1 img-4 img-2" "img-3 img-3 img-3"; }
     .hero .grid-galeria img {
-      display: grid;
       width: 100%;
-      object-fit: cover;
-      justify-content: center;
-      align-items: center; }
+      object-fit: cover; }
     .hero .grid-galeria .img-1 {
       grid-area: img-1;
       height: 15vh;
@@ -545,9 +645,11 @@ section .card-ofertas {
 
 @media (max-width: 680px) {
   .of_seccion .of_container .of_texto p {
-    font-size: 12px; }
+    font-size: medium; }
+    .of_seccion .of_container .of_texto p strong {
+      font-size: small; }
     .of_seccion .of_container .of_texto p b {
-      font-size: 15px; } }
+      font-size: small; } }
 
 /*FOOTER*/
 @media screen and (max-width: 646px) {
@@ -571,12 +673,10 @@ section .card-ofertas {
 /*SCROLLER*/
 @media screen and (max-width: 550px) {
   section .scroller .marcas img {
-    height: 45px; } }
+    height: 55px; } }
 
 @media screen and (max-width: 440px) {
-  section .scroller .marcas img {
-    height: 35px; } }
-
-@media screen and (max-width: 369px) {
-  section .scroller .marcas img {
-    height: 25px; } }
+  section .scroller .marcas {
+    flex-direction: row; }
+    section .scroller .marcas img {
+      height: 35px; } }
