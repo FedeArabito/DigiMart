@@ -6,6 +6,7 @@ section .card-ofertas{
     @include flex-text(flex, center, center,center);
     flex-wrap: wrap;
     .cards{
+        background-color: rgb(19, 17, 17);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -32,17 +33,21 @@ section .card-ofertas{
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-color: rgb(19, 17, 17);
             }
         }
         .card-contenido{
             @include flex-text(flex, center, center,center);
             flex-wrap: wrap;
+            background-color: rgb(19, 17, 17);
+            background-color: rgb(19, 17, 17);
             h4{
                 margin: 10px 0;
                 color: white;
                 font-size: 12px;
                 line-break: normal;
                 max-width: 180px;
+                background-color: rgb(19, 17, 17);
             }
         }
         .card-precio{
@@ -52,20 +57,27 @@ section .card-ofertas{
             color: white;
             margin-bottom: 10px;
             margin-top: 10px;
+            background-color: rgb(19, 17, 17);
+            p{
+                background-color: rgb(19, 17, 17);
+            }
             .p_viejo{
                 text-decoration: line-through;
+                background-color: rgb(19, 17, 17);
             }
         }
         .card-link{
             @include flex-text(flex, center, center,center);
             margin-bottom: 30px;
             flex-wrap: wrap;
+            background-color: rgb(19, 17, 17);
             a{
                 background-color: rgb(255,0,103);
                 border-radius: 10px;
                 color: white;
                 font-size: 1em;
                 padding: 5px;
+                
             }
         }
     }
