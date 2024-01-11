@@ -16,10 +16,9 @@
     
     .wrapper{
         border-radius: 10px;
-        width: 90%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: minmax(100px, auto);
         grid-gap: 10px;
         
         div{

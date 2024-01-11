@@ -336,10 +336,9 @@ section .card-ofertas {
   margin: 0 80px; }
   .bento_grid_novedades .wrapper {
     border-radius: 10px;
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px; }
     .bento_grid_novedades .wrapper div {
       border-radius: 10px;
@@ -680,3 +679,11 @@ section .card-ofertas {
     flex-direction: row; }
     section .scroller .marcas img {
       height: 35px; } }
+
+@media screen and (max-width: 443px) {
+  .marcas h2, .marcas span {
+    font-size: medium; } }
+
+@media screen and (max-width: 347px) {
+  .marcas h2, .marcas span {
+    font-size: small; } }

@@ -233,3 +233,18 @@
     }
 }
 
+@media screen and (max-width: 443px){
+    .marcas{
+        h2,span{
+font-size: medium;            
+        }
+}
+}
+
+@media screen and (max-width: 347px){
+    .marcas{
+        h2,span{
+font-size: small;            
+        }
+}
+}
